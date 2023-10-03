@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*holds the style elements for the body in HTML*/
+body{
+    /*Sets the fonts for the HTML file to use*/
+    font-family:Verdana, Geneva, Arial, sans-serif;
+    /*Creates a gradient that will cover the back of the page*/
+    background-image: linear-gradient(to right, #FFFFFF, lightgray);
+}
+
+#Banner{
+    /*sets the banner to automatically change width to fit its environment*/
+    width:auto;
+    /*sets the margin to automatically change to fit its environment*/
+    margin:auto;
+    background-color: #788780;
+    /*aligns the text to the center*/
+    text-align: center;
+    color: black;
+    /*gives the banner a padding of 15px*/
+    padding: 15px;
+}
+
+/*Makes all of the links' text black*/
+a{
+    color:black
+}
+
+#navigation{
+    background-color: #876E6B;
+    text-align: center;
+}
+
+/*Creates the wrapper that will contain most article elements*/
+#wrapper{
+    width: 960px;
+    background-color:#C4C4C4;
+    height:850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Creates the generic table tag, to be used by most tables*/
+#table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Designs the table unique to the contact page*/
+#contacttable{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Creates the styles for the boxes to be used in the HTML files*/
+.box{
+    /*Makes the boxes exist as far left as it can*/
+    float:left;
+    height:400px;
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+    background-color: #B1C4C1;
+}
+
+/*Creates the styling elements for the footer content*/
+#bottom{
+    color:black;
+    background-color: #B1C4C1;
+    position: absolute;
+    bottom: 0;
+    padding:15px;
+}

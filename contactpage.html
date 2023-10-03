@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects</title>
+        <!--links the HTML file to the CSS file.-->
+        <link href="portfoliostyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <!--Sets up the banner with the page title-->
+            <div id="Banner">
+                <h1> Ciaran Kettles portfolio </h1>
+            </div>
+            <div id="navigation">
+                <nav>
+                    <h4>
+                        <!--Links to the page and the other 3 pages-->
+                        <a href="homepage.html", style="font-size:small"> Home Page | </a>
+                        <a href="aboutme.html", style="font-size: small"> About Me | </a>
+                        <a href="projectpage.html", style="font-size: small"> Project Page | </a>
+                        <a href="contactpage.html" style="font-size: small"> Contact me </a>
+                    </h4>
+                </nav>
+            </div>
+        </header>
+        <div id="wrapper">
+            <article>
+                <!--sets up a table unique to this page, pulling details from the CSS file-->
+                <table id="contacttable">     
+                    <!--creates the form and instructs the website what to do upon submission-->
+                    <form action=mailto:ciaran.kettles@ontariotechu.net ?subject="Contact" enctype="text/plain" method="get" name="Form">
+                        <!--creates a new row in the table-->
+                        <tr>
+                            <!--creates and styles the caption-->
+                            <caption><h2>Contact me</h2></caption>
+                            <caption><h5>Send me any questions!</h5></caption>
+                        </tr>
+                        <tr>
+                            <!--classifies every element within the tag as a table element-->
+                            <td>
+                                <!--Creates the label for the mandatory Name field-->
+                                <label for="name">Name:</label><br><br>
+                                <!--Creates the name field-->
+                                <input type="text" name="name" size="40" placeholder="Please enter your name" required><br>
+                            </td>
+                        </tr>
+                        <!--creates a new table row-->
+                        <tr>
+                            <td>
+                                <!--creates and labels the mandatory email field-->
+                                <label for="email">Email: </label><br><br>
+                                <input type="text" name="email" size="50" placeholder="Enter your email" required><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--creates and labels the optional phone number field-->
+                                <label for="phone number">Phone number (optional):</label><br><br>
+                                <input type="phone" name="phone number" size="50" placeholder="Phone Number"> <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--creates and labels the mandatory field where the message will be entered-->
+                                <label for="message">message: </label><br><br>
+                                <textarea name="message" cols="60" rows="8"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--creates the submit and reset form buttons-->
+                                <input type="submit" value="Click here to send message">
+                                <input type="reset" value="Click here to restart">
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </article>
+        </div>
+    </body>
+</html>

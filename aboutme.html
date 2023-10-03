@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About me</title>
+        <!--links the HTML file to the CSS file-->
+        <link href="portfoliostyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <!--Sets up the banner with the page title-->
+            <div id="Banner">
+                <h1> About me </h1>
+            </div>
+            <!--sets up the navigation table with links to the other 3 pages-->
+            <div id="navigation">
+                <nav>
+                    <h4>
+                        <a href="homepage.html", style="font-size:small"> Home Page | </a>
+                        <a href="aboutme.html", style="font-size: small"> About Me | </a>
+                        <a href="projectpage.html", style="font-size: small"> Project Page | </a>
+                        <a href="contactpage.html" style="font-size: small"> Contact me </a>
+                    </h4>
+                </nav>
+            </div>
+        </header>
+        <!--creates the wrapper with all the content inside-->
+        <div id="wrapper">
+            <article>
+                <!--creates the table with the generic ID-->
+                <table id="table">
+                    <!--creates the first table row -->
+                    <tr>
+                        <!--Creates the caption for the table-->
+                        <caption><h2> Details: </h2></caption>
+                    </tr>
+                    <tr>
+                        <!--classifies everything within the tag as an element of the table-->
+                        <td>
+                            <!--creates the box to hold the text-->
+                            <div class="box"><h4>Name:</h4>
+                            <br><p>Ciaran Kettles</p></div>
+                        </td>
+                        <td>
+                            <div class="box"><h4>Picture of me:</h4>
+                            <!--creates an image and sets the dimensions of it-->
+                            <br><img src="self-image.jpg" height="300" width="200"/> </div>
+                        </td>
+                        <td>
+                            <div class="box"><h4> Video of me:</h4>
+                            <!--creates a video and sets both the dimensions and the properties-->
+                            <br><video id="abtmevid" controls width="250", height="250", poster="cover.jpg" preload="auto"><source src="about-me-vid.mp4" type="video/mp4"></video></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="box"><h4>Greetings!</h4>
+                            <p>I am a Ontario tech U student, making this for my webdev class. My favorite type of food is seafood, my favorite color is purple, and I love libraries.</p></div>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </body>
+</html>
